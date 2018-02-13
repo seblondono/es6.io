@@ -10,11 +10,19 @@
   let points = 50;
   let winner = false;
 
+  if (points > 40) {
+    let winner = true; // no errors 'cause this winner only available inside if statement
+  }
+
+  // Const will let you update attributes of an object
+  // but not the while object in one go
+
   const person = {
     name: 'Wes',
     age: 28
   }
 
+  // If it is necessary to make the variable completely constant, then use freeze
   const wes = Object.freeze(person);
 
 </script>

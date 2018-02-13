@@ -6,11 +6,25 @@
 </head>
 <body>
 <script>
+
+  // The first example shows how the var keyword lets you
+  // re-assign and update the value stored in the variable
+  // even create duplicated variable names and the code won't break
+
+  var width = 100;
+  console.log(width);
+  var width = 200;
+  console.log(width);
+
+
   function setWidth() {
     var width = 100;
-    console.log(width);
+    console.log(width); // works 'cause inside function scope
   }
   setWidth();
+    console.log(width); // doesn't work 'cause outside function scope
+
+
 
   var age = 100;
   if(age > 12) {
