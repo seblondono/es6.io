@@ -8,22 +8,34 @@
 <script>
   const names = ['wes', 'kait', 'lux'];
 
+  // old fashion function with explicit return
   const fullNames = names.map(function(name) {
     return `${name} bos`;
   });
 
+  // arrow function with 1+ argument syntax and explicit return
   const fullNames2 = names.map((name) => {
     return `${name} bos`;
   });
 
+  // arrow function with single argument syntax and explicit return
   const fullNames3 = names.map(name => {
     return `${name} bos`;
   });
 
+  // arrow function with single argument syntax and implicit return
   const fullNames4 = names.map(name => `${name} bos`);
 
+  // arrow function with no arguments and implicit return
   const fullNames5 = names.map(() => `cool bos`);
 
+  // old fashion named function with explicit return
+  function sayMyName(name) {
+    return `hello ${name}`;
+  }
+
+  // anonymous arrow function with 1+ argument syntax 
+  // and implicit return asigned to const variable
   const sayMyName = (name) => {
     alert(`Hello ${name}!`)
   }
