@@ -63,6 +63,11 @@
   <script>
     const box = document.querySelector('.box');
     box.addEventListener('click', function() {
+
+      // console.log(this); // Prints to the console the box element
+      // If we used an arrow function we would only get an object from the window scope
+      // Which would be the parent of the arrow function
+
       let first = 'opening';
       let second = 'open';
 
