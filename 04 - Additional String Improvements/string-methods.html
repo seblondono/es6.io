@@ -16,12 +16,21 @@ const model = 'x5';
 const colour = 'Royal Blue';
 
 // .startsWith()
+course.startsWith('RBF'); // true
+course.startsWith('rbf'); // false
+
+flightNumber.startsWith('AC', 3) // true
 
 // .endsWith()
+flightNumber.endsWith('jz'); // true
+accountNumber.endsWith('RT', 11); // true
 
 // .includes()
+flightNumber.includes('AC'); // true
 
 // .repeat()
+make.repeat(3); //BMWBMWBMW
+
 
 function leftPad(str, length = 20) {
   return `→ ${' '.repeat(length - str.length)}${str}`;
