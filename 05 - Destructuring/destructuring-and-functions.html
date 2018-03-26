@@ -16,7 +16,7 @@
     return converted;
   }
 
-  const { USD, AUD } = convertCurrency(100);
+  const { USD, AUD } = convertCurrency(100); // get only part of the returned object
   console.log(USD, AUD);
 
   function tipCalc({ total = 100, tip = 0.15, tax = 0.13 } = {}) {
