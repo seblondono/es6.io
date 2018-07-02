@@ -19,6 +19,8 @@
   const { USD, AUD } = convertCurrency(100); // get only part of the returned object
   console.log(USD, AUD);
 
+
+  // Need to pass also a default empty object = {} for the destructured arguments
   function tipCalc({ total = 100, tip = 0.15, tax = 0.13 } = {}) {
     return total + (tip * total) + (tax * total);
   }

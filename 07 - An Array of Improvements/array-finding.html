@@ -178,8 +178,9 @@
      }
   ];
   const code = 'VBgtGQcSf';
-  const post = posts.find(post => post.code === code);
+  const post = posts.find(post => post.code === code); //Could add a .filter() to find more than one post
 
+  // Finds index that could later used to remove an item
   const postIndex = posts.findIndex(post => post.code === code);
   console.log(postIndex);
 
