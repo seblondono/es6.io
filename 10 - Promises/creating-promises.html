@@ -8,6 +8,7 @@
 <script>
   const p = new Promise((resolve, reject) => {
     setTimeout(() => {
+      resolve('Wes is cool');
       reject(Error('Err wes isn\'t cool'));
     }, 1000);
   });

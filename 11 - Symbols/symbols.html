@@ -16,7 +16,7 @@
   };
 
   for (const person in classRoom) {
-    console.log(person);
+    console.log(person); // Shows nothing because symbols are not iterable
   }
 
   const syms = Object.getOwnPropertySymbols(classRoom);

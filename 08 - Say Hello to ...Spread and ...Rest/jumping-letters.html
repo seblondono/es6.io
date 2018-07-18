@@ -30,7 +30,13 @@
   <h2 class="jump">SPREADS!</h2>
 
 <script>
-  
+    let heading = document.querySelector('.jump');
+    heading.innerHTML = sparanWord(heading.textContent);
+
+    function sparanWord(word) {
+      return [...word].map(letter => `<span>${letter}</span>`).join('');
+    }
+    
 </script>
 </body>
 </html>
