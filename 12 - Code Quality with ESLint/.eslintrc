@@ -1,7 +1,9 @@
 {
   "env": {
     "es6": true,
-    "browser": true
+    "browser": true,
+    "node": true,
+    "jquery": true
   },
   "extends": "airbnb",
   "rules": {
