@@ -5,10 +5,26 @@
     "node": true,
     "jquery": true
   },
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
   "rules": {
     "no-console": 0,
-    "no-unused-vars": 1
+    "no-unused-vars": 1,
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120
+      }
+    ]
   },
-  "plugins": ["html", "markdown"]
+  "plugins": [
+    "html",
+    "markdown",
+    "prettier"
+  ]
 }

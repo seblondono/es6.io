@@ -8,15 +8,15 @@ const weather = new Promise((resolve) => {
 
 const tweets = new Promise((resolve) => {
   setTimeout(() => {
-    resolve(['I like cake', 'BBQ is good too!']);
+   resolve(['I like cake', 'BBQ is good too!']);
   }, 500);
 });
 
 Promise
   .all([weather, tweets])
   .then(responses => {
-    const [weatherInfo, tweetInfo] = responses;
-    console.log(weatherInfo, tweetInfo);
+  const [weatherInfo, tweetInfo] = responses;
+  console.log(weatherInfo, tweetInfo);
   });
 
 const postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
