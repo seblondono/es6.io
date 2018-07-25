@@ -9,3 +9,4 @@ const wes = new User('Wes Bos', 'wesbos@gmail.com', 'wesbos.com');
 const profile = createURL(wes.name);
 const image = gravatar(wes.email);
 console.log(image);
+
